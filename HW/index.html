@@ -3,51 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Домашняя работа form</title>
+        <script>
+            function sizePic() {
+             size = document .getElementById("size").value;
+             img = document .getElementById("pic");
+             img.width = 100+25*size;
+            }
+        </script>
     </head>
     <body>
-      <!--  <ul type="disc">
-            <li>Котик</li>
-            <li>Собачка</li>
-            <li>Птичка</li>
-        </ul>
-
-        <ol type="1" start="10">
-            <li>Король</li>
-            <li>Принц</li>
-            <li>Принцесса</li>
-        </ol>
-
-        <dl>
-            <dt>Максимум</dt>
-            <dd>Lorem ipsut it is..</dd>
-        </dl> --!>
-
-     <!-- <table border="1" width="35%" cellpadding="10" cellspacing="10">
-          <tr>
-              <th>Ячейка 1</th>
-              <th>Ячейка 2</th>
-
-          </tr>
-          <tr>
-              <th>Ячейка 3</th>
-              <th>Ячейка 4</th>
-          </tr>
-      </table> --!>
-
-      <table width="30%" border="1" cellpadding="5">
-          <tr>
-              <th bgcolor="#a52a2a">Ячейка 1</th>
-              <th rowspan="2">Ячейка 2</th>
-          </tr>
-          <tr>
-              <th valign="top">Ячейка 3</th>
-          </tr>
-          <tr>
-              <th colspan="2" bgcolor="aqua">Ячейка 4</th>
-          </tr>
-
-
-      </table>
-
+    <p>Размер Картинки: <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3"></p>
+    <p> <img src="img.jpg" id="pic"></p>
     </body>
 </html>
