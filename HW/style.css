@@ -1,0 +1,25 @@
+p{
+
+    color: blue;
+}
+.logo{
+
+    color: aqua;
+}
+#head{
+
+    background-color: crimson;
+}
+div {
+    background-color: blue !important;
+
+}
+div.logo.logo2{
+
+    background-color: darkgreen !important;
+}
+
+div#foot.logo.logo2{
+
+    background-color: darkslateblue !important;
+}

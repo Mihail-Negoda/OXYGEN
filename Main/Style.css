@@ -1,0 +1,11 @@
+p {
+    background: aqua;
+}
+.fixed{
+
+    color: blueviolet;
+    position: fixed;
+    top: 80px;
+    width: 200px;
+    height: 200px;
+}
