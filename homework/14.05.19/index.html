@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Домашняя работа 14.05</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            input:active{
+
+                color: fuchsia;
+            }
+
+            a:link{
+                color: yellow;
+
+            }
+            a:visited{
+                color: brown;
+
+            }
+            input:focus{
+                color: red;
+
+            }
+            input:hover{
+
+                color: darkorange;
+            }
+            span:first-child{
+                background-color: lime;
+
+            }
+            span:last-child{
+                background-color: darkorange;
+
+            }
+
+            :lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+            :lang(fr) > q { quotes: '« ' ' »'; }
+            :lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <p><input type="text" value="Текст"></p>
+            <a href="index.html">Перейди</a><br>
+            <a href="index.html">Ссылка</a>
+            <p><input type="text" value="Сайт"></p>
+            <p><input type="text" value="Инпут"></p>
+        </form>
+            <div>
+                <span> Это будет со цветом</span>
+                <span> Lorem ipsum dolor sit amet</span><br>
+                <span> А этот c другим цветом</span>
+            </div>
+                <div lang="en"><q>English txt</q></div>
+                <div lang="fr"><q>French txt</q></div>
+                <div lang="de"><q>German txt</q></div>
+
+
+
+
+
+
+    </body>
+</html>
