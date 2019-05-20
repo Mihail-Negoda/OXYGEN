@@ -4,23 +4,81 @@
     <meta charset="utf-8">
     <title>Офис работа</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        header{
+
+            width: 100%;
+            background-color: darkorange;
+            height: 10vh;
+        }
+        .left{
+            float: left;
+            width: 30%;
+            height: 90vh;
+        }
+        .right {
+            float: right;
+            width: 70%;
+            height: 90vh;
+            background-color: lime;
+        }
+        footer{
+            flex-direction: row;
+            display: flex;
+            background: brown;
+            height: 33px;
+            justify-content: center;
+
+        }
+        .footer{
+            width: 100%;
+            background-color: orange;
+            height: 50px;
+
+        }
+        .clearfix::after{
+
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .logo{
+
+
+            background-color: coral;
+        }
+        .logo2{
+
+
+            background-color: darkblue;
+        }
+        .logo3{
+
+
+            background-color: darkorchid;
+        }
+    </style>
 </head>
 <body>
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, deserunt sequi. Dolorem, inventore iste molestiae
-
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, deserunt sequi. Dolorem, inventore iste molestiae
-
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, deserunt sequi. Dolorem, inventore iste molestiae
-
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, deserunt sequi. Dolorem, inventore iste molestiae
-
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, deserunt sequi. Dolorem, inventore iste molestiae
-
-    provident quae repellat repellendus? Aut dolorum fugiat numquam repellendus sint, ullam voluptatibus? Eos vel,
-    voluptatibus.</p>
-
-<button class="fixed">Кот</button>
-
+    <header>
+        head
+    </header>
+    <main class="clearfix">
+        <div class="left    "> Left</div>
+        <div class="right"> Right</div>
+    </main>
+    <footer>
+        <div class="logo"> P </div>
+        <div class="logo2"> V</div>
+        <div class="logo3"> T</div>
+    </footer>
+    <div class="footer">
+        tfooter
+    </div>
 
 </body>
 </html>
