@@ -4,63 +4,106 @@
     <title>Домашняя работа 30.04</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .tableone{
+        *{
+            box-sizing: border-box;
+        }
+        .logo{
 
             width: 30%;
-            margin: 0%;
-        }
-        .tabletwo{
-
-            float: top;
-            width: 65%;
 
         }
+        .main {
+
+            padding: 3%;
+        }
+
 
     </style>
+    <script>
+        function sizePic() {
+            size = document.getElementById("size").value;
+            img = document.getElementById("pic");
+            img.width = 60 + 20*size;
+        }
+    </script>
 </head>
 <body>
     <form>
         <fieldset>
             <legend> Название формы</legend>
-            <table>
-            <div class="tableone" >
-             <div>
-                 <p> Поле со спискаом:
-                     <select name="select">
+            <table border="1" width="60%">
+                <tr>
+                    <p><td class="logo"> Поле со спискаом:</td> </p>
+                     <td class="logo main"><select name="select">
                            <option value="v1"> Вариант 1 </option>
                           <option value="v2"> Вариант 2 </option>
                           <option value="v3"> Вариант 3 </option>
                           <option value="v4"> Вариант 4 </option>
                      </select>
-                         <input type="submit" value="Поиск">
-                     </p>
-                </div>
-                <div>
-                 <p> Поле со спискаом:
-                        <div>
-                            <select name="select" size="5" multiple>
+                     </td>
+
+                        <p><td class="logo">Поиск:</td></p>
+                    <td>
+                        <input type="search" name="search" value="Поиск">
+                    </td>
+                    <p>
+                    <td class="logo">
+                        <input type="number" name="t" value="0" min="0" max="3" step="0.1">
+                    </td>
+                    </p>
+                    <td>
+                        <p> <input type="range" min="1" max="3" id="size" oninput="sizePic()" value="3"> </p>
+                    </td>
+                </tr>
+                <tr class="logo2">
+                    <p><td class="logo">Поле со спискаом:</td></p>
+
+                          <td class="main">  <select name="select" size="5" multiple>
                                 <option value="v1"> Вариант 1 </option>
                                 <option value="v2"> Вариант 2 </option>
                                 <option value="v3"> Вариант 3 </option>
                                 <option value="v4"> Вариант 4 </option>
                                 <option value="v5"> Вариант 5 </option>
                             </select>
-                        </div>
-                </div>
-                <form enctype="multipart/form-data" method="post">
-                    <p> Цвет: <input type="file" name="color" multiple accept="image/*,image/jpeg">
-                    </p>
-                </form>
-            </div>
-           <table>
-            <div class="tabletwo">
-                <div>
-                <p> Поиск:
-                    <input type="search" name="search" placeholder="Поиск">
+                           </td>
+                    <p><td class="logo"> Многострочный текст:</td></p>
+                        <td>
+                            <p><textarea type="comment" value="Текст" rows="10px"></textarea></p>
+                        </td>
+                    <td class="main" width="100px">
+                        <p><input type="radio" name="but" value="but"> Radio Button</p>
+                        <p><input type="radio" name="but2" value="but2"> Radio Button</p>
+                        <p><input type="radio" name="but3" value="but3"> Radio Button</p>
+                        <p><input type="radio" name="but4" value="but4"> Radio Button</p>
 
+                    </td>
+
+                    <td>
+                        <img src="img.jpg" alt="Vin" id="pic">
+                    </td>
+                </tr>
+                <tr class="logo3">
+                    <p><td class="main">Цвет:</td></p>
+                        <td>
+                            <input type="color" name="cl" value="#ff0000">
+                            <input type="submit" value="Выбрать">
+                        </td>
+                    <form enctype="multipart/form-data" method="post"></form>
+                        <td colspan="2"><p><input type="file" name="color" multiple accept="image/*,image/jpeg"></p></td>
+                    <td><p><input type="submit" value="Отправить"></p></td>
+                    <td><p class="main"><input type="submit" value="Очистить"></p></td>
+
+
+
+
+
+
+               <!-- <p> Поиск:
+                    <input type="search" name="search" placeholder="Поиск">
+                    -->
                 </p>
-                </div>
-            </div>
+             </tr>
+            </table>
         </fieldset>
     </form>
 </body>
