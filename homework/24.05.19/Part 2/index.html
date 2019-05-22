@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .up{
+            height: 80px;
+        }
+        .middle{
+
+            height: 200px;
+        }
+        .footer{
+            height: 200px;
+        }
+        .first_colon{
+
+            width: 20%;
+            float: right;
+            /* background-color: darkorchid; */
+        }
+        .second_colon{
+            float: right;
+            width: 20%;
+            /* background-color: orange; */
+        }
+        .third_colon{
+            float: right;
+            width: 20%;
+           /* background-color: darkgreen; */
+
+        }
+
+    </style>
+    <script>
+        function sizePic() {
+            size = document.getElementById("size").value;
+            img = document.getElementById("pic");
+            img.width = 60 + 20*size;
+        }
+    </script>
+</head>
+<body>
+     <div class="up">
+         <div class="first_colon"><input type="range" min="1" max="3" id="size" oninput="sizePic()" value="3"></div>
+        <div class="first_colon"><input type="number" name="t" value="0" min="0" max="3" step="0.1"></div>
+        <div class="first_colon"><input type="search" name="search" value="Поиск"></div>
+        <div class="first_colon"><p>Поиск:</p></div>
+        <div class="first_colon">
+            <select name="select">
+                <option value="v1"> Вариант 1 </option>
+                <option value="v2"> Вариант 2 </option>
+                <option value="v3"> Вариант 3 </option>
+                <option value="v4"> Вариант 4 </option>
+            </select>
+        </div>
+        <div class="first_colon"><p>Поле со спискаом:</p></div>
+     </div>
+
+     <div class="middle">
+        <div class="second_colon"><img src="img.jpg" alt="Vin" id="pic"></div>
+        <div class="second_colon">
+            <p><input type="radio" name="but" value="but"> Radio Button</p>
+            <p><input type="radio" name="but2" value="but2"> Radio Button</p>
+            <p><input type="radio" name="but3" value="but3"> Radio Button</p>
+            <p><input type="radio" name="but4" value="but4"> Radio Button</p>
+        </div>
+        <div class="second_colon"><p><textarea type="comment" value="Текст" rows="10px"></textarea></p></div>
+        <div class="second_colon"><p>Многострочный текст:</p></div>
+         <div class="second_colon">
+              <select name="select" size="5" multiple>
+                 <option value="v1"> Вариант 1 </option>
+                 <option value="v2"> Вариант 2 </option>
+                 <option value="v3"> Вариант 3 </option>
+                 <option value="v4"> Вариант 4 </option>
+                 <option value="v5"> Вариант 5 </option>
+             </select>
+         </div>
+        <div class="second_colon">
+            <p>Поле со спискаом:</p>
+        </div>
+
+     </div>
+     <div class="footer">
+         <form>
+         <div class="third_colon"><p><input type="submit" value="Очистить"></p></div>
+         <div class="third_colon"><p><input type="submit" value="Отправить"></p></div>
+         <div class="third_colon"><p><input type="file" name="color" multiple accept="image/*,image/jpeg"></p></div>
+         </form>
+         <div class="third_colon">
+             <input type="color" name="cl" value="#ff0000">
+             <input type="submit" value="Выбрать">
+         </div>
+         <div class="third_colon"><p>Цвет:</p></div>
+
+
+     </div>
+</body>
+</html>
