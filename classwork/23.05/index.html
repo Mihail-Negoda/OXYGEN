@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        border-style: solid;
+        border-width: 1px;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background: darkblue;
+        -webkit-transition: width 2s, height 2s, background-color 2s,
+        webkit-transform 2s;
+            transition: width 2s, height 2s, background-color 2s, transform 3s;
+    }
+    .box:hover{
+        background-color: darkgreen;
+        width: 200px;
+        height: 200px;
+        -webkit-transform: rotate(80deg);
+        transform: rotate(180deg);
+
+    }
+</style>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et laboriosam, numquam? Consequuntur deleniti
+        obcaecati odio quod repudiandae ut voluptate. Aut debitis, eum fuga inventore iste nam placeat quaerat totam ullam?</p>
+    <div class="box"></div>
+</body>
+</html>
