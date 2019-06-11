@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+
+    //ЗАДАНИЕ 1
+
+    /* for (var a = 2; a <= 10; a++) {
+
+         if (a % 2) continue;
+         alert(a);
+     }   */
+
+
+    //ЗАДАНИЕ 2
+
+
+    /*var a = 0;
+
+    while (a < 3){
+
+        alert('номер ' + a + '!');
+        a++;
+
+    }*/
+
+    //ЗАДАНИЕ 3
+
+   /* var a;
+
+    do {
+
+        a = prompt('Напишите число');
+    }while (a < 100); */
+
+   //ЗАДАНИЕ 4
+
+    outer:
+    for (var a = 2; a <= 10; a++){
+
+        for (var b = 2; b < a; b++){
+            if (a % b == 0) continue outer;
+        }
+        alert (a);
+    }
+
+
+
+
+
+</script>
+<body>
+
+</body>
+</html>
